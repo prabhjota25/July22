@@ -1,6 +1,6 @@
 package jul22.week1.day1;
 
-public class Bus {
+public class Bus{
 
 	//GlobalVariable
 	String color ="Red";
