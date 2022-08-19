@@ -19,7 +19,8 @@ public class LearnLocators {
 		System.out.println(title);
 		driver.findElement(By.name("btnLogin")).click();
 		
-		String output = driver.findElement(By.id("message9")).getText();
+		//String output = driver.findElement(By.id("message9")).getText();
+		String output = driver.findElement(By.cssSelector("#message9")).getText();
 		
 		System.out.println(output);
 		if (output.equals("Email_ID must not be blank"))
