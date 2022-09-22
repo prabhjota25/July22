@@ -17,9 +17,13 @@ public class LearnBeforeAndAfterMethod extends BaseClass {
 	
 	
 	@Test
-  public void f() {
+  public void addEmployee() {
 		driver.findElement(By.linkText("Add Employee")).click();
   }
 
+	@Test (dependsOnMethods = {"jul22.week4.day19.TestNGAnnothations.ClickReports.reports", "addEmployee"})
+	  public void reportsDepends() {
+		driver.findElement(By.linkText("Reports")).click();
+	  }
  
 }

@@ -15,8 +15,8 @@ import org.testng.annotations.AfterMethod;
 public class ClickReports extends BaseClass {
   
 	
-	@Test (invocationCount = 3)
-  public void f() {
+	@Test (invocationCount = 1)
+  public void reports() {
 		driver.findElement(By.linkText("Reports")).click();
   } 
 

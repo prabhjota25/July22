@@ -4,6 +4,9 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+
+import java.util.NoSuchElementException;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
@@ -13,13 +16,13 @@ import org.testng.annotations.AfterSuite;
 public class LearnTestNGAnnotation {
   
 	@Test
-	public void testCase1() 
+	public void BtestCase1() 
 	{
 		System.out.println("TestNG Test Case1");
   }
 	
 	@Test
-	public void testCase2() 
+	public void AtestCase2() 
 	{
 		System.out.println("TestNG Test Case2");
   }
